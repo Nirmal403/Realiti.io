@@ -3,15 +3,19 @@
     gap: 5px;
     margin-top: 60px;
     margin-left: 20px;
+    /* border:1px solid red; */
 }
 #addtocart{
     width: 80%;
     margin: auto;
     margin-top: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,60%);
+     /* border:1px solid red; */
 }
 #addtocart__left{
-    width: 75%;
+    width: 80%;
+    /* border:1px solid red; */
 }
 #addtocart__left>div{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -49,6 +53,11 @@
 }
 #qty>div>h4{
     padding-top: 5px;
+    
+}
+#title{
+    overflow:hidden;
+    /* border:1px solid red; */
 }
 #addtocart__left>div>div:nth-child(3){
     text-align: center;
@@ -81,11 +90,12 @@
     cursor: pointer;
 }
 #addtocart__right{
-    width: 20%;
+    width: 30%;
     height: 250px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-left: 20px;
+    margin-left: 5%;
     border-radius: 10px;
+    /* border:1px solid red; */
 }
 #addtocart__right{
     padding-left: 20px;
@@ -101,14 +111,15 @@
     padding-bottom: 20px;
 }
 #addtocart__right__but{
-    margin-top: 20px;
-    width: 200px;
+    /* margin-top: 20px; */
+    width: 100%;
     height: 35px;
     border: 1px solid #0b1320;
     background-color: #0b1320;
     color: white;
     border-radius: 5px;
     font-size: medium;
+    /* border:1px solid red; */
     cursor: pointer;
 }
 #addtocart__right__but:hover{
@@ -116,3 +127,46 @@
     background-color: #fff;
     color: #0b1320;
 }
+
+
+
+/* responsiveness */
+
+
+/* responsiveness */
+
+@media only screen and (min-width: 600px) and  (max-width: 1100px){
+    #addtocart{
+        width: 80%;
+        margin: auto;
+    
+        display:grid;
+        grid-template-columns: repeat(2, 60%);
+        /* border:1px solid red; */
+        gap: 30px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px){
+    #addtocart{
+        width: 100%;
+        margin: auto;
+        margin-bottom:2%;   
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* border:1px solid red; */
+        gap: 30px;
+    }
+    #addtocart__left{
+        width:80%;
+         /* border:1px solid red; */
+    }
+
+    #addtocart__right{
+        /* border:2px solid red; */
+        width:80%;
+        margin-bottom: 10%;
+    }
+    
+  }

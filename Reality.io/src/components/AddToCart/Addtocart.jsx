@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { addQt, AddTotal, removeCart, subCount, subQt, SubTotal } from "../../redux/Action/actions";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Cart.css"
 
@@ -73,9 +73,9 @@ export const Addtocart = ()=>{
                                     <div><h4>{e.qty}</h4></div>
                                     <div><button onClick={()=>{addqty(e)}}>+</button></div>
                                 </div>
-                                <div><p>{e.title}</p></div>
+                                <div id="title"><p>{e.title}</p></div>
                                 <div><h1>₹{e.price*e.qty}</h1></div>
-                                <div><button onClick={() => 
+                                <div><button id="closebut" onClick={() => 
                                     remove(e)
                                     } onClickCapture={()=>{
                                         sub(e)
@@ -96,7 +96,7 @@ export const Addtocart = ()=>{
 
                 </div>
             </div>
-        <Footer />
+        {/* <Footer /> */}
         </>
     )
 }
