@@ -1,0 +1,14 @@
+#success{
+    /* border:1px solid red; */
+    width:30%;
+    margin:auto;
+    align-items: center;
+    margin-top: 5%;
+}
+#success>h1{
+    text-align: center;
+}
+#success>img{
+    width:50%;
+    justify-content: center;
+}

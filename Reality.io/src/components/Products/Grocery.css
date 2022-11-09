@@ -139,6 +139,9 @@
   display: flex;
 
 }
+#container{
+  border:1px solid red;
+}
 
 
 /* responsiveness */
@@ -164,8 +167,8 @@
 
 @media only screen and (max-width: 600px){
   #grocery{
-      width: 100%;
-      margin: auto;
+      width:80%;
+      /* margin: auto; */
       margin-bottom:2%;   
       display:grid;
       grid-template-columns: repeat(1, 1fr);
@@ -173,7 +176,7 @@
       gap: 30px;
   }
   #search_item{
-    width:100%;
+    width:60%;
     /* border:1px solid red; */
   }
 }

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { addQt, AddTotal, removeCart, subCount, subQt, SubTotal } from "../../redux/Action/actions";
-// import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Cart.css"
 
@@ -96,7 +96,7 @@ export const Addtocart = ()=>{
 
                 </div>
             </div>
-        {/* <Footer /> */}
+        <Footer />
         </>
     )
 }
