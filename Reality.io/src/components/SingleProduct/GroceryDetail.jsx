@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { addCount, addToCart, CartGrocery, FetchSelectedGrocery, SetTotal } from "../../redux/Action/actions";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Product.css"
 
@@ -53,7 +53,7 @@ export const GroceryDetail = ()=>{
                     </div>
                 )}
             </div>
-        <Footer />
+        {/* <Footer /> */}
         </>
     )
 }

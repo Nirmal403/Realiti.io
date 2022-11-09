@@ -1,11 +1,50 @@
 #grocery{
-  width: 80%;
+  /* width: 75%; */
   margin-top: 50px;
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
+  /* border:1px solid red; */
 }
+/* responsiveness */
+
+@media only screen and (min-width: 600px) and  (max-width: 1100px){
+  #grocery{
+      width: 60%;
+      margin: auto;
+  
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* border:1px solid red; */
+      gap: 30px;
+  }
+  #search_item{
+    border:1px solid red;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #grocery{
+      width: 100%;
+      margin: auto;
+      margin-bottom:2%;   
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      /* border:1px solid red; */
+      gap: 30px;
+  }
+  #search_item{
+    width:100%;
+    /* border:1px solid red; */
+  }
+}
+
+#sort{
+  /* border:5px solid red; */
+  width:400px;
+}
+
 #grid-div{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 350px;
@@ -87,7 +126,7 @@
   color: #0b1320;
 }
 #sort{
-  width: 10%;
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 100px;
   margin-left: 20px;
@@ -96,7 +135,7 @@
   border-radius: 5px;
 }
 #sort>button{
-  width: 120px;
+  width: 80%;
   height: 40px;
   color: #fff;
   background-color: #0b1320;
@@ -116,14 +155,18 @@
 #search_item{
   width: 400px;
   height: 40px;
-  margin-left: 650px;
+  /* margin-left: 650px; */
+  margin-left:10%;
   border-radius: 5px;
   border: 1px solid #0b1320;
   padding-left: 20px;
+  /* border:1px solid red; */
   color: #0b1320;
   margin-top: 50px;
+  margin-bottom:3%;
 }
 #gro-main{
   width: 100%;
   display: flex;
+
 }
