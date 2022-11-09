@@ -1,5 +1,4 @@
 # Realiti.io_assignment
-# Realiti.io_assignment
 
 # Lists of Characters
 
