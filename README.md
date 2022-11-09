@@ -26,7 +26,7 @@ https://reality-io.vercel.app/
 #### Get item
 
 ```http
-  GET (https://masai-hotel30.herokuapp.com/data)
+  GET (https://masai-hotel30.herokuapp.com/data1)
 ```
 
 | Parameter | Type     | Description                       |
