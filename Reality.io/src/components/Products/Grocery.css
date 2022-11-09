@@ -1,0 +1,129 @@
+#grocery{
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+#grid-div{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 350px;
+  border-radius: 10px;
+}
+#grid-top{
+  height: 80%;
+}
+#grid-bottom{
+  height: 20%;
+}
+#grid-img{
+  width: 100px;
+  margin-left: 80px;
+  margin-top: 10px;
+  height:110px;
+}
+#grid-img-mob{
+  width: 50px;
+  margin-left: 120px;
+  margin-top: 30px;
+}
+#grid-img:hover{
+  width: 110px;
+  transition: 1s linear;
+}
+#grid-title{
+  text-align: center;
+  height:30px;
+  /* border:1px solid red; */
+  font-family: 'Josefin Sans', sans-serif;
+  overflow:hidden;
+}
+#grid-price{
+  text-align: center;
+  /* padding-top: 20px; */
+
+  font-family: 'Josefin Sans', sans-serif;
+}
+#grid-rating{
+  text-align: center;
+}
+#grid-count{
+  text-align: center;
+}
+#grid-bottom{
+  display: flex;
+}
+#grid-but-view{
+  width: 120px;
+  height: 40px;
+  margin-top: 15px;
+  color: #fff;
+  background-color: #0b1320;
+  border-radius: 5px;
+  border: 1px solid #0b1320;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#grid-but-view:hover{
+  background-color: white;
+  color: #0b1320;
+}
+#grid-but-cart{
+  width: 120px;
+  height: 40px;
+  margin-top: 15px;
+  color: #fff;
+  background-color: #0b1320;
+  border-radius: 5px;
+  border: 1px solid #0b1320;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#grid-but-cart:hover{
+  background-color: white;
+  color: #0b1320;
+}
+#sort{
+  width: 10%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #0b1320;
+  border-radius: 5px;
+}
+#sort>button{
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background-color: #0b1320;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-left: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#sort>button:nth-child(1){
+}
+#sort>button:hover{
+  background-color: #fff;
+  color: #0b1320;
+}
+#search_item{
+  width: 400px;
+  height: 40px;
+  margin-left: 650px;
+  border-radius: 5px;
+  border: 1px solid #0b1320;
+  padding-left: 20px;
+  color: #0b1320;
+  margin-top: 50px;
+}
+#gro-main{
+  width: 100%;
+  display: flex;
+}
